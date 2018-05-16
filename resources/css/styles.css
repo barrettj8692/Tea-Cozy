@@ -1,0 +1,67 @@
+/* Universal CSS */
+body, a{
+  margin-top: 0;
+  background-color: black;
+  color: seashell;
+  font-size: 22px;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+div{
+  display:block;
+}
+
+
+
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  height: 69px;
+  background-color: black;
+  align-items: center;
+  border-bottom: 1px solid seashell;
+}
+
+.container, header{
+  flex-wrap: nowrap;
+}
+
+.nav-header{
+  display: inline-flex;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+}
+.logo img {
+  height: 50px;
+  padding-left: 10px;
+}
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+/*Mission*/
+.mission.container {
+  background-image: url(../images/img-mission-background.jpg);
+  height: 700px;
+  background-position: center;
+  padding-top: 70px;
+
+}
+.mission.container .content  {
+  background-color: black;
+  margin: auto;
+  width: 100%;
+}
