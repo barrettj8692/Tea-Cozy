@@ -1,24 +1,30 @@
 /* Universal CSS */
-body, a{
+body {
   margin-top: 0;
   background-color: black;
   color: seashell;
   font-size: 22px;
   text-align: center;
-  font-family: Helvetica, sans-serif;
+  font-family: Helvetica;
+  opacity: .9;
 }
+
+a{
+  color: seashell;
+}
+
 .container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+
 div{
-  display:block;
+  display: block;
 }
 
-
-
 /* Header */
+
 header {
   position: fixed;
   width: 100%;
@@ -27,14 +33,17 @@ header {
   background-color: black;
   align-items: center;
   border-bottom: 1px solid seashell;
+
 }
 
-.container, header{
+header.container  {
   flex-wrap: nowrap;
 }
 
 .nav-header{
-  display: inline-flex;
+  display: flex;
+  padding-right: 10px;
+
 }
 
 .logo {
@@ -42,6 +51,7 @@ header {
   justify-content: flex-start;
   align-items: center;
   flex-grow: 1;
+
 }
 .logo img {
   height: 50px;
@@ -50,13 +60,21 @@ header {
 nav span {
   display: inline-block;
   padding: 20px 10px;
+  text-decoration: underline;
+}
+
+nav a {
+  text-align: right;
 }
 
 /*Mission*/
 .mission.container {
   background-image: url(../images/img-mission-background.jpg);
-  height: 700px;
   background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+  max-width: 1200px;
+  margin: auto;
   padding-top: 70px;
 
 }
@@ -64,4 +82,85 @@ nav span {
   background-color: black;
   margin: auto;
   width: 100%;
+}
+
+/* Featured */
+
+.featureditem {
+  padding-top: 70px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.featureditem .container {
+  max-width: 1000px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.item {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 10px 10px;
+}
+
+.item img {
+  height: 200px;
+  width: 300px;
+  padding-bottom:10px;
+}
+
+.container .item p {
+  margin: 0px 0px;
+}
+
+/* Locations */
+
+.locations {
+  background-image: url(../images/img-locations-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 70px;
+  overflow-y: auto;
+}
+
+.locations h2 {
+  padding-bottom: 15px;
+  margin: 0px 0px;
+}
+
+.locations .container {
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+ .location {
+  display: inline-flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: black;
+  margin: 0px 20px;
+  opacity: 1;
+}
+
+/* Contact */
+
+.contact {
+  height: 200px;
+}
+
+.contact h2{
+  margin: 0px 0px;
+  padding: 10px 10px;
+}
+
+/* Footer */
+
+footer {
+  text-align: left;
+  padding-left: 20px;
 }
